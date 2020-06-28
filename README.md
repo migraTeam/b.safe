@@ -23,7 +23,6 @@ On mobile devices:
 
 FOR VIEWING IN VISUAL STUDIO CODE:
 
-
 On PC following structure:
 --------------------------------------------------------------------------------------------
 |                                                                                          |
