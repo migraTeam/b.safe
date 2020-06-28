@@ -1,8 +1,27 @@
+
 ## project b.safe ##
 
 Description: web application with the main task to allow quickly to create a 'case' if one or more persons are in danger to get damaged (mainly robbed) or that already unfortunately happened.
 
 The app should be optimized for use on mobile devices like smartphones or even tablets.
+
+On PC following structure:
+|  Logo	| Button 'Call Police'  	|  Menu 	|  	
+|-	|-	|-	|
+|(to do)|(first locked, 1. click unlock, 2. click call)|(archive, about, lang)|
+|map|details|foto/s|
+
+
+On mobile devices:
+
+|Logo |Button |Menu|
+|-	|-	|-	|
+|   | map | |
+|   | details | |
+|   |foto/s | |
+
+
+FOR VIEWING IN VISUAL STUDIO CODE:
 
 On PC following structure:
 --------------------------------------------------------------------------------------------

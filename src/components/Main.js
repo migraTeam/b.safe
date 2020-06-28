@@ -1,11 +1,12 @@
 import React from 'react';
+import Map from './Map'
 import '../App.css';
 
 function Main() {
 
   return (
 <div className="Main">
-  <div >map</div>
+<Map />
   <div >details</div>
   <div >foto</div>
 </div>
