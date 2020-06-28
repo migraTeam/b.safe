@@ -1,3 +1,89 @@
+## project b.safe ##
+
+Description: web application with the main task to allow quickly to create a 'case' if one or more persons are in danger to get damaged (mainly robbed) or that already unfortunately happened.
+
+The app should be optimized for use on mobile devices like smartphones or even tablets.
+
+On PC following structure:
+--------------------------------------------------------------------------------------------
+|                                                                                          |
+|   Logo                          Button 'Call Police'                             Menu    |
+|  (to do)         (first locked, 1. click unlock, 2. click call)    (archive, about, lang)|
+--------------------------------------------------------------------------------------------
+|                                                                                          |
+|    ------------------------    --------------------------   -------------------------    |
+|    |                      |    |                        |   |                       |    |
+|    |                      |    |                        |   |                       |    |
+|    |                      |    |                        |   |                       |    |
+|    |                      |    |                        |   |                       |    |
+|    |         map          |    |        details         |   |         foto          |    |
+|    |                      |    |                        |   |                       |    |
+|    |                      |    |                        |   |                       |    |
+|    |                      |    |                        |   |                       |    |
+|    ------------------------    --------------------------   -------------------------    |
+|                                                                                          |
+--------------------------------------------------------------------------------------------
+
+On mobile devices:
+
+-----------------------------------
+| logo         button        menu |
+-----------------------------------
+|                                 |
+|   ---------------------------   |
+|   |          arrows         |   |
+|   |     ---------------     |   |
+|   |     |              |    |   |
+|   |     |              |    |   |
+|   |  <  |     map      |  > |   |
+|   |     |              |    |   |
+|   |     |              |    |   |
+|   |     ---------------     |   |
+|   |to indicate the direction|   |
+|   ---------------------------   |
+|                                 |
+|   ---------------------------   |
+|   |                         |   |
+|   |                         |   |
+|   |                         |   |
+|   |                         |   |
+|   |         details         |   |
+|   |                         |   |
+|   |                         |   |
+|   |                         |   |
+|   |                         |   |
+|   ---------------------------   |
+|                                 |
+|   ---------------------------   |
+|   |                         |   |
+|   |                         |   |
+|   |                         |   |
+|   |                         |   |
+|   |           foto          |   |
+|   |                         |   |
+|   |                         |   |
+|   |                         |   |
+|   |                         |   |
+|   ---------------------------   |
+|                                 |
+-----------------------------------
+
+Components:
+Header:
+ - Logo
+ - Button
+ - Menu
+ Body:
+ - Map
+ - Arrows
+ - Details
+ - Foto
+
+
+
+
+
+## from here original text ##
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
