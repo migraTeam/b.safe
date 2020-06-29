@@ -1,4 +1,8 @@
+
 29.06.2020
+
+After changing some code i wanted to deploy app. The result was "published" but I couldn't see the new app. It only worked after I changed the default branch in gitHub pages to master and then back to gh-pages
+
 new icons so we have a consistent look
 mobile menu -> only icon 'open menu', on click 'open menu' not shown but the mobile menu
 

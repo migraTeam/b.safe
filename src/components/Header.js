@@ -23,7 +23,7 @@ const Header = () => {
         <div className="topnav">
          <img src={Logo} className="flag" alt="Logo" />
          <ButtonCall />
-           <div id="mobileMenu">
+           <div className="mobileMenu" id="mobileMenu">
            {mobileMenu == 0 ? <>   
                <img onClick={mobMenuOpen} src={menu} className="flag" alt="open mobile menu" />
                </> : null}
