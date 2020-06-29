@@ -1,3 +1,8 @@
+29.06.2020
+new icons so we have a consistent look
+mobile menu -> only icon 'open menu', on click 'open menu' not shown but the mobile menu
+
+28.06.2020
 In order to use a react app on github we have to prepare the whole thing a little bit. I followed this procedure:
 1. Create an empty repository on GitHub.
 2. Create a new React app on your computer with 
