@@ -40,7 +40,8 @@
 
 
 .topnav {
-  background-color: #59595b;
+  background-color: #000000;
+  color: white;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -48,16 +49,25 @@
   align-items: center;
 }
 
-#centermobmenu{
+#mobileMenu{
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
+
+}
+#mobileMenu a{
+border-bottom: solid 1px white;
+font-size: 24px;
+margin-top: 10px;
+margin-bottom: 5px;
 }
 .myLinks{
 display: none;
 display: flex;
 flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
 }
 .myLinks img{
 width: 50px;
