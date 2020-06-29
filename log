@@ -41,8 +41,10 @@ $ git add .
 $ git commit -m "your comment"
 $ git push origin master
 
-Here is the liink to the tutorial I followed: https://github.com/gitname/react-gh-pages
+Here is the link to the tutorial I followed: https://github.com/gitname/react-gh-pages
 Here an other link to a similar one: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+And an other one for doing rather manually: https://levelup.gitconnected.com/deploying-your-react-website-to-github-pages-ac0e24601bdf
+
 Here if you created the wrong remote in number '6':
 
 git remote - v
