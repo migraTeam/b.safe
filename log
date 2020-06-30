@@ -1,3 +1,9 @@
+30.06.2020
+
+Inserted pictures. Adapted css.
+Component 'map' should render the real location
+Component 'details' should render a form with diverse data like 'what happened', 'injured person/s', 'what's missing'
+Component 'foto'should render a picture taken with the smartphone
 
 29.06.2020
 
