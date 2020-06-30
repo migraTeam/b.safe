@@ -1,4 +1,5 @@
 import React from 'react';
+import map from '../images/map.png';
 import '../App.css';
 
 function Map() {
@@ -13,7 +14,7 @@ function showPosition(position) {
 
   return (
 
-  <div id="mapholder">map</div>
+  <div className="MainContainer" id="mapholder"><img src={map} className="MainImage" alt="map" /></div>
 
   );
 }

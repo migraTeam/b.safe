@@ -1,5 +1,7 @@
 import React from 'react';
-import Map from './Map'
+import Map from './Map';
+import Foto from './Foto';
+import Details from './Details';
 import '../App.css';
 
 function Main() {
@@ -7,8 +9,8 @@ function Main() {
   return (
 <div className="Main">
 <Map />
-  <div >details</div>
-  <div >foto</div>
+<Details />
+<Foto />
 </div>
   );
 }
