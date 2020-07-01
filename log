@@ -1,9 +1,78 @@
+
+01.07.2020
+
+
+used this one to implement map : "https://www.digitalocean.com/community/tutorials/how-to-integrate-the-google-maps-api-into-react-applications"
+
+Here the old code:
+/*############################################################################*/
+/*import React, { useState} from 'react'
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+
+var x = document.getElementById("mapholder");
+
+const containerStyle = {
+  width: '400px',
+  height: '400px'
+};
+
+const center = {
+  lat: 41,
+  lng: 2
+};
+function getPosition(position) {
+center.lat = position.coords.latitude;
+center.lng = position.coords.longitude;
+}
+ 
+function Map() {
+const [map, setMap] = useState(null)
+
+
+  const onLoad = React.useCallback(function callback(map) {
+    if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(getPosition);
+} else { 
+  x.innerHTML = "Geolocation is not supported by this browser.";
+}
+    const bounds = new window.google.maps.LatLngBounds();
+    map.fitBounds(bounds);
+    setMap(map)
+  }, [])
+ 
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
+  return (
+    <LoadScript
+      googleMapsApiKey="AIzaSyCGpc8kGF95sQU2Ky8lf3YHl5Y-E8-eRoM"
+    >
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={2}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+      >
+
+        <></>
+      </GoogleMap>
+        <div className="MainContainer" id="mapholder"></div>
+    </LoadScript>
+  )
+}
+ 
+export default Map;
+*/
 30.06.2020
 
 Inserted pictures. Adapted css.
 Component 'map' should render the real location
 Component 'details' should render a form with diverse data like 'what happened', 'injured person/s', 'what's missing'
-Component 'foto'should render a picture taken with the smartphone
+Component 'foto'should render a picture taken with the smartphone.
+
+In order to use the geo location through google API for maps it needs a key. For the key it is necessary to join the google cloud platform and to open a new project. Once you have a key it is a good idea to limit the use of the key to your own page. You can use a format like "http://www.yourpage.com/*. If the page is accessible with http and https you have to put both urls in the limitations.
 
 29.06.2020
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Map from './Map';
+import MapContainer from './MapContainer';
 import Foto from './Foto';
 import Details from './Details';
 import '../App.css';
@@ -8,7 +8,7 @@ function Main() {
 
   return (
 <div className="Main">
-<Map />
+<MapContainer />
 <Details />
 <Foto />
 </div>
