@@ -101,6 +101,10 @@ height: 30px;
   width: 90vw;
   height: 70vw;
 }
+.arrow{
+width: 60px;
+height: 60px;
+}
 }
 
 /*##########################  old stuff to implement in case needed #############################*/
