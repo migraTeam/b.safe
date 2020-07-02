@@ -1,6 +1,6 @@
-
-/* from here code to get adapted for the mobile menu  */
-
+h4{
+text-align: center;
+}
 
 .topnav {
   background-color: black;
@@ -10,8 +10,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  z-index: 0;
 }
-
+.topnav a{
+text-decoration: none;
+color: white;
+}
+.topnav a hover{
+color: rgb(243, 197, 197);
+}
 .CallNow{
 background-color: red;
 color: white;
@@ -50,9 +58,9 @@ align-items: flex-end;
 }
 .Main{
 display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: flex-start;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .MainImage{
   width: 30vw;
@@ -60,6 +68,9 @@ align-items: flex-start;
 }
 .MainContainer{
 margin-top: 20px;
+border-radius: 20px;
+border: 1px solid gray;
+box-shadow: 11px 7px 10px -3px rgba(0,0,0,0.35);
 }
 .ArrowsContainer{
 display: flex;
@@ -73,9 +84,29 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 }
+.DetailsContainer{
+margin: 20px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
 .arrow{
 width: 120px;
 height: 120px;
+}
+label{
+font-size: 20px;
+padding: 10px;
+}
+.form-check{
+margin: 10px;
+}
+form{
+border-radius: 10px;
+border: 1px solid gray;
+margin: 5px;
 }
 @media only screen and (max-width: 900px) {
 .Main{
@@ -105,89 +136,22 @@ height: 30px;
 width: 60px;
 height: 60px;
 }
+label{
+font-size: 16px;
+padding: 5px;
 }
-
-/*##########################  old stuff to implement in case needed #############################*/
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
 }
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  display: block;
-  top: 0;
+@media only screen and (max-width: 600px) {
+.DetailsContainer{
+  min-width: 90vw;
+margin: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+border-radius: 20px;
+border: 1px solid gray;
+box-shadow: 11px 7px 10px -3px rgba(0,0,0,0.35);
 }
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
 }
-
-/* Style the active link (or home/logo) */
-.active {
-  color: white;
-}
-/* ende mobile menu */
-
-
-/* ab hier scroll to top */
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 80px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  /*border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: orangered; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 4px 8px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 3vw; /* Increase font size */
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-}
-
-#myBtn:hover {
-  background-color: rgb(255, 1, 1); /* Add a dark-grey background on hover */
-    border-right: 0px solid white;
-  border-bottom: 0px solid white;
-    border-left: 2px solid white;
-  border-top: 2px solid white;
-}
-/* ende scroll to top */
-/* ab hier sticky menu */
-
-.topcon {
-  padding: 10px;
-}
-
-.navigaion {
-  background: white;
-    position: fixed;
-  z-index: 2;
-  height: 55px;
-}
-
-.main {
-  z-index: 1;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
-
-.sticky + .main {
-  /*padding-top: 102px;*/
-  padding-top: 20px;
-}
-/* ende sticky menu */
-
 

@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom';
 const mapStyles = {
   map: {
     position: 'relative',
-    width: '33vw',
-    height: '33vw'
+    width: '65vw',
+    height: '65vw'
   }
 };
 
@@ -56,6 +56,9 @@ componentDidUpdate(prevProps, prevState) {
             }
           });
         });
+      }
+      else {
+        alert("Please enable the location");
       }
     }
     this.loadMap();

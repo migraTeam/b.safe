@@ -3,10 +3,7 @@ import { Map, GoogleApiWrapper } from 'google-maps-react';
 import { InfoWindow, Marker } from 'google-maps-react';
 import CurrentLocation from './Map';
 
-const mapStyles = {
-  width: '33vw',
-  height: '33vw'
-};
+
 
 
 export class MapContainer extends Component {
@@ -34,7 +31,7 @@ onClose = props => {
 
   render() {
     return (
-      <div>
+      
       <CurrentLocation
         centerAroundCurrentLocation
         google={this.props.google}
@@ -50,7 +47,7 @@ onClose = props => {
           </div>
         </InfoWindow>
       </CurrentLocation>
-      </div>
+      
     );
   }
 }

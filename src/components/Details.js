@@ -1,13 +1,221 @@
-import React from 'react';
-import foto from '../images/foto.jpg';
+import React, { useState } from 'react';
 import '../App.css';
 
 function Details() {
+  /*const [selectedOption, setselectedOption] = useState("option1");
+
+  const handleOptionChange = changeEvent => {
+  setselectedOption({
+    selectedOption: changeEvent.target.value
+  });
+};*/
 
   return (
-<div className="MainContainer">
-<img src={foto} className="MainImage" alt="foto" />
+    <div>
+<div className="DetailsContainer">
+
+<form>
+<h4>What happened?</h4>
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option1"
+        /*checked={setselectedOption === "option1"}
+        onChange={handleOptionChange}*/
+        className="form-check-input"
+      />
+      Robbed
+    </label>
+  </div>
+
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option2"
+        /*checked={setselectedOption === "option2"}
+        onChange={handleOptionChange}*/
+        className="form-check-input"
+      />
+      Attacked
+    </label>
+  </div>
+
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option3"
+        className="form-check-input"
+      />
+      Insulted
+    </label>
+  </div>
+
+    <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option4"
+        className="form-check-input"
+      />
+      Drugs
+    </label>
+  </div>
+
+    <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option5"
+        className="form-check-input"
+      />
+      Something else
+    </label>
+  </div>
+
+</form>
+
+<form>
+<h4>What's missing?</h4>
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option1a"
+        className="form-check-input"
+      />
+      Wallet
+    </label>
+  </div>
+
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option2a"
+        className="form-check-input"
+      />
+      Backpack
+    </label>
+  </div>
+
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option3a"
+        className="form-check-input"
+      />
+      Camera
+    </label>
+  </div>
+
+    <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option4a"
+        className="form-check-input"
+      />
+      Smartphone
+    </label>
+  </div>
+
+    <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option5a"
+        className="form-check-input"
+      />
+      Something else
+    </label>
+  </div>
+</form>
+
+<form>
+<h4>Persons injured?</h4>
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option1b"
+        className="form-check-input"
+      />
+      1 Person
+    </label>
+  </div>
+
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option2b"
+        className="form-check-input"
+      />
+      2 or more persons
+    </label>
+  </div>
+
+  <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option3b"
+        className="form-check-input"
+      />
+      Severe injuries
+    </label>
+  </div>
+
+    <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option4b"
+        className="form-check-input"
+      />
+      No person injured
+    </label>
+  </div>
+
+    <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option5b"
+        className="form-check-input"
+      />
+      Something else
+    </label>
+  </div>
+
+</form>
+
 </div>
+  <div className="form-group">
+    <button className="btn btn-primary mt-2" type="submit">
+      Save
+    </button>
+  </div>
+  </div>
   );
 }
 export default Details;

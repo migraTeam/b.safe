@@ -1,3 +1,12 @@
+02.07.2020
+
+implemented arrows (at the moment only the green ones, the red ones are in the folder but not programmed yet. The aim is to change on Click the green arrow to the red one and then submit the case. Yet not implemented the time as time stamp for the case.
+
+mobile view should be fine, otherwise adapt the css
+
+implemented 3 forms in "Details". Still to implement the functionality and the submit button -> update the case created with arrow
+
+also here mobile view should be fine
 
 01.07.2020
 
