@@ -20,9 +20,23 @@ color: white;
 .topnav a hover{
 color: rgb(243, 197, 197);
 }
-.CallNow{
+.buttonContainer{
+height: 60px;
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: rgb(238, 171, 144);
+}
+button{
+  font-size: 20px;
+  height: 30px;
+margin: 20px;
 background-color: red;
 color: white;
+}
+button a{
+color: white;
+text-decoration: none;
 }
 
 .mobileMenu{
@@ -68,8 +82,7 @@ align-items: center;
 }
 .MainContainer{
 margin-top: 20px;
-border-radius: 20px;
-border: 1px solid gray;
+border-radius: 2px;
 box-shadow: 11px 7px 10px -3px rgba(0,0,0,0.35);
 }
 .ArrowsContainer{
@@ -103,11 +116,16 @@ padding: 10px;
 .form-check{
 margin: 10px;
 }
+.form-group{
+display: flex;
+justify-content: center;
+}
 form{
 border-radius: 10px;
-border: 1px solid gray;
+border: 1px solid rgb(219, 219, 219);
 margin: 5px;
 }
+
 @media only screen and (max-width: 900px) {
 .Main{
 display: flex;
@@ -129,8 +147,8 @@ width: 30px;
 height: 30px;
 }
 .MainImage{
-  width: 90vw;
-  height: 70vw;
+  width: 80vw;
+  height: 60vw;
 }
 .arrow{
 width: 60px;
@@ -143,15 +161,15 @@ padding: 5px;
 }
 @media only screen and (max-width: 600px) {
 .DetailsContainer{
-  min-width: 90vw;
+width: 90vw;
 margin: 20px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-border-radius: 20px;
-border: 1px solid gray;
+border-radius: 2px;
 box-shadow: 11px 7px 10px -3px rgba(0,0,0,0.35);
 }
+
 }
 
