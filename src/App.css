@@ -17,19 +17,33 @@ text-align: center;
 text-decoration: none;
 color: white;
 }
+.logo{
+font-family: 'MuseoModerno', cursive;
+font-size: 24px;
+}
+.menupos{
+  margin-top: 15px;
+  min-width: 80px;
+  min-height: 30px;
+  display: flex;
+  justify-content: flex-end;
+   border-bottom: 1px solid gray;
+   border-radius: 10px;
+}
 .topnav a hover{
 color: rgb(243, 197, 197);
 }
 .buttonContainer{
-height: 60px;
+min-height: 200px;
 width: 100%;
 display: flex;
 justify-content: center;
+align-items: center;
 background-color: rgb(238, 171, 144);
 }
 button{
   font-size: 20px;
-  height: 30px;
+  height: 60px;
 margin: 20px;
 background-color: red;
 color: white;
@@ -58,7 +72,6 @@ width: 40px;
 height: 40px;
 }
 .mobileMenu a{
-border-bottom: solid 1px white;
 font-size: 24px;
 margin-top: 10px;
 margin-bottom: 10px;

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import flages from '../images/flages.png';
 import menu from '../images/menu.png';
 import close from '../images/close.png';
-import Logo from '../images/logo.png'
 import '../App.css';
 
 const Header = () => {
@@ -21,7 +20,7 @@ const Header = () => {
   return (
 <header>
         <div className="topnav">
-         <img src={Logo} className="flag" alt="Logo" />
+         <span className="logo">b.safe</span>
 
            <div className="mobileMenu" id="mobileMenu">
            {mobileMenu === "0" ? <>   
@@ -29,10 +28,10 @@ const Header = () => {
                </> : null}
               {mobileMenu === "1" ? <>        
                <div className="myLinks">
-                 <img onClick={mobMenuOpen} src={close} className="flag" alt="close mobile menu" />
-                 <a href="Archive.html">Archive</a>
-                 <a href="About.html">About</a>
-                 <img src={flages} className="flag" alt="logo" />
+                 <div className="menupos"><img onClick={mobMenuOpen} src={close} className="flag" alt="close mobile menu" /></div>
+                 <div className="menupos"><a href="Archive.html">Archive</a></div>
+                 <div className="menupos"><a href="About.html">About</a></div>
+                 <div className="menupos"><img src={flages} className="flag" alt="logo" /></div>
              </div>
              </> : null}
            </div>
