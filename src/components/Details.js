@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
 
 function Details() {
-  /*const [selectedOption, setselectedOption] = useState("option1");
-
-  const handleOptionChange = changeEvent => {
-  setselectedOption({
-    selectedOption: changeEvent.target.value
-  });
-};*/
 
   return (
-    <div>
+<div className="MainContainer">
 <div className="DetailsContainer">
 
 <form>
@@ -22,8 +15,6 @@ function Details() {
         type="radio"
         name="react-tips"
         value="option1"
-        /*checked={setselectedOption === "option1"}
-        onChange={handleOptionChange}*/
         className="form-check-input"
       />
       Robbed
@@ -36,8 +27,6 @@ function Details() {
         type="radio"
         name="react-tips"
         value="option2"
-        /*checked={setselectedOption === "option2"}
-        onChange={handleOptionChange}*/
         className="form-check-input"
       />
       Attacked
@@ -145,7 +134,11 @@ function Details() {
   </div>
 </form>
 
-<form>
+
+
+</div>
+  <div className="form-group">
+  <form>
 <h4>Persons injured?</h4>
   <div className="form-check">
     <label>
@@ -155,21 +148,10 @@ function Details() {
         value="option1b"
         className="form-check-input"
       />
-      1 Person
+      1 or more persons are injured
     </label>
   </div>
 
-  <div className="form-check">
-    <label>
-      <input
-        type="radio"
-        name="react-tips"
-        value="option2b"
-        className="form-check-input"
-      />
-      2 or more persons
-    </label>
-  </div>
 
   <div className="form-check">
     <label>
@@ -179,7 +161,7 @@ function Details() {
         value="option3b"
         className="form-check-input"
       />
-      Severe injuries
+      Very severe injuries
     </label>
   </div>
 
@@ -208,9 +190,6 @@ function Details() {
   </div>
 
 </form>
-
-</div>
-  <div className="form-group">
     <button className="btn btn-primary mt-2" type="submit">
       Save
     </button>

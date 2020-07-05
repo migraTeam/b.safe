@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const mapStyles = {
-  map: {
+  mapDesign: {
     position: 'relative',
     width: '60vw',
     height: '60vw'
@@ -107,7 +107,7 @@ componentDidUpdate(prevProps, prevState) {
   }
 
   render() {
-     const style = Object.assign({}, mapStyles.map);
+     const style = Object.assign({}, mapStyles.mapDesign);
     return (
       <div>
         <div style={style} ref="map">

@@ -4,7 +4,6 @@ import GreenUp from '../images/Green-Up.svg.png';
 import GreenRight from '../images/Green-Right.svg.png';
 import GreenDown from '../images/Green-Down.svg.png';
 import GreenLeft from '../images/Green-Left.svg.png';
-import RedLeft from '../images/Red-Left.svg.png';
 import '../App.css';
 
 function Arrows() {
@@ -22,6 +21,7 @@ function Arrows() {
             console.log(ArrowColor);
           }
     };
+
   return (
 <div className="MainContainer">
 <div className ="ArrowsContainer">

@@ -20,7 +20,7 @@ const Header = () => {
   return (
 <header>
         <div className="topnav">
-         <span className="logo">b.safe</span>
+         <div className="logoContainer"><span className="logo">b.safe</span></div>
 
            <div className="mobileMenu" id="mobileMenu">
            {mobileMenu === "0" ? <>   
