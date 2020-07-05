@@ -4,36 +4,47 @@ import GreenUp from '../images/Green-Up.svg.png';
 import GreenRight from '../images/Green-Right.svg.png';
 import GreenDown from '../images/Green-Down.svg.png';
 import GreenLeft from '../images/Green-Left.svg.png';
+import RedLeft from '../images/Red-Left.svg.png';
+import RedUp from '../images/Red-Up.svg.png';
+import RedDown from '../images/Red-Down.svg.png';
+import RedRight from '../images/Red-Right.svg.png';
 import '../App.css';
 
 function Arrows() {
     const [ArrowColor, setArrowColor] = useState("Green");
 
-
-        const ChangeArrowColor = () => {
+        const ChangeArrowColor = (e) => {
           if(ArrowColor === "Green"){
         setArrowColor("Red");
-        console.log(ArrowColor);
+       alert(e.target.name);
 
           }
           else{
             setArrowColor("Green");
-            console.log(ArrowColor);
           }
     };
+
 
   return (
 <div className="MainContainer">
 <div className ="ArrowsContainer">
-<div className ="ArrowsContainer"><img onClick={ChangeArrowColor} src={GreenLeft} className="arrow" alt="arrow left" />
+<div className ="ArrowsContainer">{ArrowColor==="Green"? <>
+<img onClick={ChangeArrowColor} src={GreenLeft} name="left" className="arrow" alt="green arrow left" />
+</>: <img onClick={ChangeArrowColor} src={RedLeft} className="arrow" alt="red arrow left" />}
 <div className ="ArrowsCenterContainer">
-<div className="ArrowDiv"><img onClick={ChangeArrowColor} src={GreenUp} className="arrow" alt="arrow up" /></div>
+<div className="ArrowDiv">{ArrowColor==="Green"? <>
+<img onClick={ChangeArrowColor} src={GreenUp} name="up" className="arrow" alt="green arrow up" />
+</>: <img onClick={ChangeArrowColor} src={RedUp} className="arrow" alt="red arrow up" />}</div>
 <MapContainer />
-<div className="ArrowDiv"><img onClick={ChangeArrowColor} src={GreenDown} className="arrow" alt="arrow down" /></div>
+<div className="ArrowDiv">{ArrowColor==="Green"? <>
+<img onClick={ChangeArrowColor} src={GreenDown} name="down" className="arrow" alt="green arrow down" />
+</>: <img onClick={ChangeArrowColor} src={RedDown} className="arrow" alt="red arrow down" />}</div>
 </div>
 </div>
 <div className ="ArrowsContainer">
-<img onClick={ChangeArrowColor} src={GreenRight} className="arrow" alt="arrow right" />
+{ArrowColor==="Green"? <>
+<img onClick={ChangeArrowColor} src={GreenRight} name="right" className="arrow" alt="green arrow right" />
+</>: <img onClick={ChangeArrowColor} src={RedRight} className="arrow" alt="red arrow right" />}
 </div>
 </div>
 </div>
