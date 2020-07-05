@@ -23,6 +23,7 @@ export class CurrentLocation extends React.Component {
   }
 
 componentDidUpdate(prevProps, prevState) {
+ 
     if (prevProps.google !== this.props.google) {
       this.loadMap();
     }
@@ -49,6 +50,7 @@ componentDidUpdate(prevProps, prevState) {
       if (navigator && navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(pos => {
           const coords = pos.coords;
+                 alert("Your latitude is: " + pos.coords.latitude + " and your longitude: " +pos.coords.longitude);
           this.setState({
             currentLocation: {
               lat: coords.latitude,
