@@ -65,7 +65,7 @@ function Details() {
         value="option5"
         className="form-check-input"
       />
-      Something else
+      <input type="text" id="what_happened" name="whath" placeholder="what happened?"/>
     </label>
   </div>
 
@@ -129,7 +129,7 @@ function Details() {
         value="option5a"
         className="form-check-input"
       />
-      Something else
+      <input type="text" id="what_dissapeared" name="whatd" placeholder="what dissapeared?"/>
     </label>
   </div>
 </form>
@@ -185,7 +185,7 @@ function Details() {
         value="option5b"
         className="form-check-input"
       />
-      Something else
+      <input type="text" id="persons" name="whatp" placeholder="injuries"/>
     </label>
   </div>
 

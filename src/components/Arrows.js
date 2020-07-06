@@ -12,11 +12,11 @@ import '../App.css';
 
 function Arrows() {
     const [ArrowColor, setArrowColor] = useState("Green");
-
+const timestamp = Date.now();
         const ChangeArrowColor = (e) => {
           if(ArrowColor === "Green"){
         setArrowColor("Red");
-       alert(e.target.name);
+       alert("A new case get created! You indicated the direction: " + e.target.name + " at time: " + new Intl.DateTimeFormat('de-DE', {year: 'numeric', month: 'long', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'}).format(timestamp));
 
           }
           else{
