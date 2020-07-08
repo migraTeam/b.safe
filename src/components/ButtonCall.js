@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
-
+import cases from './cases.json';
 import '../App.css';
 
 
+const newData= cases.map((data) => {
+alert(data.id + " cases in archive");
+}
+);
 
 
 function ButtonCall() {
-    const [CallPolice, setCallPolice] = useState("Unlock Call Police - you should call the police in situations where there is danger to life, use or immediate threat of use of violence, a crime in progress,serious injury to a person or an offender that has just been disturbed");
+    const [CallPolice, setCallPolice] = useState("Unlock Call Police");
 
         const unlock = () => {
-          if(CallPolice === "Unlock Call Police - you should call the police in situations where there is danger to life, use or immediate threat of use of violence, a crime in progress,serious injury to a person or an offender that has just been disturbed"){
+          if(CallPolice === "Unlock Call Police"){
+            alert("Please read carefully - you should call the police in situations where there is danger to life, use or immediate threat of use of violence, a crime in progress, serious injury to a person or an offender that has just been disturbed");
         setCallPolice("CALL POLICE")
           }
           else{

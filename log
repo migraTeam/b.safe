@@ -1,3 +1,16 @@
+08.07.2020
+to do:
+- write the 'case' to json (apparently not possible on github pages - need to go somewhere else to use node)
+- implement notifications for passive users if new case
+- save the map as new case and show it in cases (map.png??)
+- create archive (json file ready but incomplete)
+- check if location allowed an notify user (first time works, if > 1 not)
+- create the about page (when all finished)
+- translate to spanish and implement the english button
+- in json also write status 'police called'
+- implement taking picture and save it (node), add to json
+- maybe first view only menu + call button + map, after map -> details -> picture (everytime add to json)
+
 02.07.2020
 
 implemented arrows (at the moment only the green ones, the red ones are in the folder but not programmed yet. The aim is to change on Click the green arrow to the red one and then submit the case. Yet not implemented the time as time stamp for the case.

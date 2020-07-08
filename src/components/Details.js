@@ -4,7 +4,7 @@ import '../App.css';
 function Details() {
 
   return (
-<div className="MainContainer">
+<div className="MainContainer" id="detailsContainer">
 <div className="DetailsContainer">
 
 <form>
@@ -65,7 +65,7 @@ function Details() {
         value="option5"
         className="form-check-input"
       />
-      <input type="text" id="what_happened" name="whath" placeholder="what happened?"/>
+      <input type="text" id="what_happened" name="whath" placeholder="sth. else"/>
     </label>
   </div>
 
@@ -129,7 +129,7 @@ function Details() {
         value="option5a"
         className="form-check-input"
       />
-      <input type="text" id="what_dissapeared" name="whatd" placeholder="what dissapeared?"/>
+      <input type="text" id="what_dissapeared" name="whatd" placeholder="sth. else"/>
     </label>
   </div>
 </form>

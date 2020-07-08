@@ -142,7 +142,9 @@ border-radius: 10px;
 border: 1px solid rgb(219, 219, 219);
 margin: 5px;
 }
-
+input{
+max-width: 20vw;
+}
 @media only screen and (max-width: 900px) {
 
 .topnav img{
