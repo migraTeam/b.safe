@@ -9,13 +9,15 @@ import RedUp from "../images/Red-Up.svg.png";
 import RedDown from "../images/Red-Down.svg.png";
 import RedRight from "../images/Red-Right.svg.png";
 import "../App.css";
+import { setPropTypes } from "recompose";
 
-function Arrows(props) {
+function Arrows({ onClick, status }) {
   const [ArrowColor, setArrowColor] = useState("Green");
   const timestamp = Date.now();
   const ChangeArrowColor = (e) => {
     if (ArrowColor === "Green") {
       setArrowColor("Red");
+
       alert(
         "A new case get created! You indicated the direction: " +
           e.target.name +
@@ -36,17 +38,17 @@ function Arrows(props) {
 
   return (
     <div className="MainContainer" id="mapContainer">
-      <div className="ArrowsContainer">
+      <div className="ArrowsContainer" onClick= {onClick}>
         <div className="ArrowsContainer">
           {ArrowColor === "Green" ? (
             <>
               <img
-                onClick={ChangeArrowColor}
+                onClick= {ChangeArrowColor}
                 src={GreenLeft}
                 name="left"
                 className="arrow"
                 alt="green arrow left"
-              />
+              /> 
             </>
           ) : (
             <img

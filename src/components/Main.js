@@ -8,11 +8,15 @@ import '../App.css';
 function Main() {
 const [whichContainer, setwhichContainer] = useState("0");
 
+  const increment = () => {
+    setwhichContainer("1")
+  }
+
   return (
 <div className="Main">
 <ButtonCall />
 {whichContainer === "0"? <>
-<Arrows status={whichContainer}/></>:
+<Arrows onClick={increment} status={whichContainer} /></>:
 <Details />}
 <Foto />
 </div>
