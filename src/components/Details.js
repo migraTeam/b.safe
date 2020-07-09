@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function Details() {
+function Details({ onClick, status }) {
 
   return (
 <div className="MainContainer" id="detailsContainer">
@@ -139,7 +139,19 @@ function Details() {
 </div>
   <div className="form-group">
   <form>
-<h4>Persons injured?</h4>
+<h4>Are any persons injured?</h4>
+    <div className="form-check">
+    <label>
+      <input
+        type="radio"
+        name="react-tips"
+        value="option4b"
+        className="form-check-input"
+      />
+      No person injured
+    </label>
+  </div>
+
   <div className="form-check">
     <label>
       <input
@@ -156,7 +168,7 @@ function Details() {
   <div className="form-check">
     <label>
       <input
-        type="radio"
+        type="checkbox"
         name="react-tips"
         value="option3b"
         className="form-check-input"
@@ -165,22 +177,12 @@ function Details() {
     </label>
   </div>
 
-    <div className="form-check">
-    <label>
-      <input
-        type="radio"
-        name="react-tips"
-        value="option4b"
-        className="form-check-input"
-      />
-      No person injured
-    </label>
-  </div>
+
 
     <div className="form-check">
     <label>
       <input
-        type="radio"
+        type="checkbox"
         name="react-tips"
         value="option5b"
         className="form-check-input"
@@ -190,7 +192,7 @@ function Details() {
   </div>
 
 </form>
-    <button className="btn btn-primary mt-2" type="submit">
+    <button onClick= {onClick} className="btn btn-primary mt-2" type="submit">
       Save
     </button>
   </div>

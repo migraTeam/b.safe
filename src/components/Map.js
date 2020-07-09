@@ -50,7 +50,7 @@ componentDidUpdate(prevProps, prevState) {
       if (navigator && navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(pos => {
           const coords = pos.coords;
-                 alert("Your latitude is: " + pos.coords.latitude.toFixed(2) + " and your longitude: " +pos.coords.longitude.toFixed(2));
+                /* alert("Your latitude is: " + pos.coords.latitude.toFixed(2) + " and your longitude: " +pos.coords.longitude.toFixed(2));*/
           this.setState({
             currentLocation: {
               lat: coords.latitude,

@@ -18,7 +18,7 @@ function Arrows({ onClick, status }) {
     if (ArrowColor === "Green") {
       setArrowColor("Red");
 
-      alert(
+      /*alert(
         "A new case get created! You indicated the direction: " +
           e.target.name +
           " at time: " +
@@ -30,7 +30,7 @@ function Arrows({ onClick, status }) {
             minute: "2-digit",
             second: "2-digit",
           }).format(timestamp)
-      );
+      );*/ 
     } else {
       setArrowColor("Green");
     }
