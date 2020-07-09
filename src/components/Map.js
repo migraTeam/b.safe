@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom';
 const mapStyles = {
   mapDesign: {
     position: 'relative',
-    width: '60vw',
-    height: '60vw'
+    width: '66vw',
+    height: '66vw'
   }
 };
 

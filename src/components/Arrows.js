@@ -123,6 +123,7 @@ function Arrows({ onClick, status }) {
           )}
         </div>
       </div>
+      <div><p className="description">In case criminal(s) running away, please indicate the direction pointing on the arrow! </p></div>
     </div>
   );
 }
