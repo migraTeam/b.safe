@@ -4,12 +4,11 @@ to do:
 - implement notifications for passive users if new case
 - save the map as new case and show it in cases (map.png??)
 - create archive (json file ready but incomplete)
-- check if location allowed an notify user (first time works, if > 1 not)
 - create the about page (when all finished)
 - translate to spanish and implement the english button
 - in json also write status 'police called'
 - implement taking picture and save it (node), add to json
-- maybe first view only menu + call button + map, after map -> details -> picture (everytime add to json)
+- first view only menu + call button + map, after map -> details -> picture (everytime add to json)
 
 02.07.2020
 

@@ -35,12 +35,3 @@ setwhichContainer("0")
   );
 }
 export default Main;
-
-/*
-<Foto />
-{whichContainer === "0"? <>
-<Arrows onClick={changeStatus} status={whichContainer} />
-<Foto />
-</>:
-<Details onClick={changeStatus} status={whichContainer}/>}
-*/
