@@ -17,7 +17,7 @@ function ButtonCall() {
   return (
 
         <div className="buttonContainer">
- <button className={CallPolice} onClick={unlock}>{CallPolice}
+ <button variant="danger" className="btn" onClick={unlock}>{CallPolice}
  {CallPolice === "" ? <>
  <a className="CallNow" href="tel:555-555-1212">555-555-1212</a>
               </> : null}

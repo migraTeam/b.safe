@@ -1,4 +1,5 @@
 h4{
+  margin: 5px;
 text-align: center;
 }
 
@@ -113,7 +114,7 @@ justify-content: space-between;
 align-items: center;
 }
 .DetailsContainer{
-margin: 10px;
+margin: 2px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -144,7 +145,7 @@ font-size: 20px;
 padding: 10px;
 }
 .form-check{
-margin: 10px;
+margin: 5px;
 }
 .form-group{
 display: flex;
@@ -158,6 +159,11 @@ margin: 5px;
 }
 input{
 max-width: 20vw;
+}
+.twoButtons{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 }
 .FotoContainer{
   margin-top: 10px;

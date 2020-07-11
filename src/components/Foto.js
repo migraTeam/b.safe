@@ -16,8 +16,8 @@ settakePicture("Take now a picture")
   return (
 <div className="FotoContainer" id="fotoContainer">
 <img className="img" src={foto} alt="foto" onClick={ onClick }></img>
- <button className="btn" onClick={unlock}>{takePicture}
-              </button>
+ <button className="btn" onClick={unlock}>{takePicture}</button>
+  <button className="btn" onClick={ onClick }>No picture</button>
 </div>
   );
 }

@@ -192,9 +192,14 @@ function Details({ onClick, status }) {
   </div>
 
 </form>
+<div className="twoButtons">
     <button onClick= {onClick} className="btn btn-primary mt-2" type="submit">
       Save
     </button>
+        <button onClick= {onClick} className="btn btn-primary mt-2" type="submit">
+      Map
+    </button>
+    </div>
   </div>
   </div>
   );
