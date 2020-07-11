@@ -52,9 +52,6 @@ function App (){
                     <Link to={"/b.safe"}>Home</Link>
                   </div>
                   <div className="menupos">
-                    <Link to={"/b.safe/Map"}>Map</Link>
-                  </div>
-                  <div className="menupos">
                     <Link to={"/Archive"}>Archive</Link>
                   </div>
                   <div className="menupos">
