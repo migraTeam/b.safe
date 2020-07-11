@@ -5,7 +5,7 @@ function About() {
 
   return (
 <div className="MainContainer">
-DAS HIER IST ABOUT
+b.safe v0.1.4
 </div>
   );
 }

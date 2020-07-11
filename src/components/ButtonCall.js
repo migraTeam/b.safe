@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
-import cases from './cases.json';
 import '../App.css';
-
-
-const newData= cases.map((data) => {
-console.log(data.id + " cases in archive");
-}
-);
 
 
 function ButtonCall() {

@@ -3,11 +3,15 @@ import Logo from "./Logo";
 import menu from "../images/menu.png";
 import close from "../images/close.png";
 import flages from "../images/flages.png";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
+
+
 import "../App.css";
+
 
 function Header() {
   const [mobileMenu, setmobileMenu] = useState("0");
+
 
   const mobMenuOpen = () => {
     if (mobileMenu === "0") {
@@ -18,6 +22,7 @@ function Header() {
   };
 
   return (
+                    <BrowserRouter>
     <header>
       <div className="topnav">
         <Logo />
@@ -43,9 +48,9 @@ function Header() {
                     alt="close mobile menu"
                   />
                 </div>
-                <Router>
+
                   <div className="menupos">
-                    <Link to={"/"}>Home</Link>
+                    <Link to={"/b.safe"}>Home</Link>
                   </div>
                   <div className="menupos">
                     <Link to={"/Archive"}>Archive</Link>
@@ -56,13 +61,15 @@ function Header() {
                   <div className="menupos">
                     <img src={flages} className="flag" alt="logo" />
                   </div>
-                </Router>
+                
               </div>
             </>
           ) : null}
         </div>
       </div>
     </header>
+    </BrowserRouter>
   );
+          
 }
 export default Header;
