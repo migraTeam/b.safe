@@ -5,7 +5,6 @@ import close from "./images/close.png";
 import flages from "./images/flages.png";
 import Home from "./components/Home";
 import About from "./components/About";
-import Arrows from "./components/Arrows";
 import Archive from "./components/Archive";
 import ButtonCall from "./components/ButtonCall";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -70,7 +69,6 @@ function App (){
     <ButtonCall />
     <div className="Main">
         <Route exact path="/b.safe" component={Home} />
-        <Route exact path="/b.safe/Map" component={Arrows} />
         <Route path="/About" component={About} />
         <Route path="/Archive" component={Archive} />
     </div>

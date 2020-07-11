@@ -39,12 +39,12 @@ function Arrows({ onClick }) {
 
   return (
     <div className="MainContainer" id="mapContainer">
-      <div className="ArrowsContainer" onClick= {onClick}>
+      <div className="ArrowsContainer">
         <div className="ArrowsContainer">
           {ArrowColor === "Green" ? (
             <>
               <img
-                onClick= {ChangeArrowColor}
+                onClick= {onClick}
                 src={GreenLeft}
                 name="left"
                 className="arrow"
@@ -53,7 +53,7 @@ function Arrows({ onClick }) {
             </>
           ) : (
             <img
-              onClick={ChangeArrowColor}
+              onClick= {onClick}
               src={RedLeft}
               className="arrow"
               alt="red arrow left"
@@ -64,7 +64,7 @@ function Arrows({ onClick }) {
               {ArrowColor === "Green" ? (
                 <>
                   <img
-                    onClick={ChangeArrowColor}
+                    onClick= {onClick}
                     src={GreenUp}
                     name="up"
                     className="arrow"
@@ -73,7 +73,7 @@ function Arrows({ onClick }) {
                 </>
               ) : (
                 <img
-                  onClick={ChangeArrowColor}
+                  onClick= {onClick}
                   src={RedUp}
                   className="arrow"
                   alt="red arrow up"
@@ -85,7 +85,7 @@ function Arrows({ onClick }) {
               {ArrowColor === "Green" ? (
                 <>
                   <img
-                    onClick={ChangeArrowColor}
+                    onClick= {onClick}
                     src={GreenDown}
                     name="down"
                     className="arrow"
@@ -94,7 +94,7 @@ function Arrows({ onClick }) {
                 </>
               ) : (
                 <img
-                  onClick={ChangeArrowColor}
+                  onClick= {onClick}
                   src={RedDown}
                   className="arrow"
                   alt="red arrow down"
@@ -107,7 +107,7 @@ function Arrows({ onClick }) {
           {ArrowColor === "Green" ? (
             <>
               <img
-                onClick={ChangeArrowColor}
+                onClick= {onClick}
                 src={GreenRight}
                 name="right"
                 className="arrow"
@@ -116,7 +116,7 @@ function Arrows({ onClick }) {
             </>
           ) : (
             <img
-              onClick={ChangeArrowColor}
+              onClick= {onClick}
               src={RedRight}
               className="arrow"
               alt="red arrow right"
