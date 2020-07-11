@@ -9,6 +9,7 @@ function Home() {
 const [whichContainer, setwhichContainer] = useState(0);
 
   const changeStatus = () => {
+    console.log(whichContainer);
     if (whichContainer < 3){
     setwhichContainer(whichContainer + 1)}
     else{
