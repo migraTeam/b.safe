@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import cases from './cases.json';
+import React from 'react';
 import '../App.css';
 
-function Info({ onClick, status }) {
+function Info({ onClick }) {
 
 
   return (

@@ -4,7 +4,7 @@ import '../App.css';
 
 
 const newData= cases.map((data) => {
-/*alert(data.id + " cases in archive");*/
+console.log(data.id + " cases in archive");
 }
 );
 

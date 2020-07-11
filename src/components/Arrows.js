@@ -9,11 +9,12 @@ import RedUp from "../images/Red-Up.svg.png";
 import RedDown from "../images/Red-Down.svg.png";
 import RedRight from "../images/Red-Right.svg.png";
 import "../App.css";
-import { setPropTypes } from "recompose";
 
-function Arrows({ onClick, status }) {
+
+function Arrows({ onClick }) {
   const [ArrowColor, setArrowColor] = useState("Green");
   const timestamp = Date.now();
+  console.log(timestamp);
   const ChangeArrowColor = (e) => {
     if (ArrowColor === "Green") {
       setArrowColor("Red");

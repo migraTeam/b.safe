@@ -1,37 +1,21 @@
-import React, { useState } from 'react';
-import Arrows from "./Arrows";
-import Foto from './Foto';
-import Info from './Info';
-import Details from './Details';
-import ButtonCall from './ButtonCall'
-import '../App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./Home";
+import ButtonCall from "./ButtonCall";
+import About from "./About";
+import Archive from "./Archive";
+import "../App.css";
 
 function Main() {
-const [whichContainer, setwhichContainer] = useState(0);
-
-  const changeStatus = () => {
-    console.log(whichContainer);
-    if (whichContainer < 2){
-    setwhichContainer(whichContainer + 1)}
-    else{
-setwhichContainer("0")
-    }
-  }
-
-
-
   return (
-<div className="Main">
-<ButtonCall />
-      {
-        {
-          '0': <Info onClick={changeStatus} status={whichContainer} />,
-          '1': <Details onClick={changeStatus} status={whichContainer}/>,
-          '2': <><Arrows onClick={changeStatus} status={whichContainer} /><Foto /></>
-
-        }[whichContainer]
-      }
-</div>
+    <div className="Main">
+      <ButtonCall />
+      <Router>
+        <Route exact path="/" component={Home} />
+        <Route path="/About" component={About} />
+        <Route path="/Archive" component={Archive} />
+      </Router>
+    </div>
   );
 }
 export default Main;

@@ -14,7 +14,8 @@ settakePicture("Take now a picture")
   }
 };
   return (
-<div className="MainContainer" id="fotoContainer">
+<div className="FotoContainer" id="fotoContainer">
+<img className="img" src={foto} alt="foto"></img>
  <button className={takePicture} onClick={unlock}>{takePicture}
  {takePicture === "" ? <>
  <a className="takePicture" href="tel:555-555-1212">555-555-1212</a>
