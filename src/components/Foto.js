@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import foto from '../images/foto.jpg';
 import '../App.css';
 
-function Foto() {
+function Foto({ onClick }) {
 const [takePicture, settakePicture] = useState("You want to take a picture?");
 
 const unlock = () => {
@@ -15,11 +15,8 @@ settakePicture("Take now a picture")
 };
   return (
 <div className="FotoContainer" id="fotoContainer">
-<img className="img" src={foto} alt="foto"></img>
- <button className={takePicture} onClick={unlock}>{takePicture}
- {takePicture === "" ? <>
- <a className="takePicture" href="tel:555-555-1212">555-555-1212</a>
-              </> : null}
+<img className="img" src={foto} alt="foto" onClick={ onClick }></img>
+ <button className="btn" onClick={unlock}>{takePicture}
               </button>
 </div>
   );
