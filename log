@@ -1,3 +1,6 @@
+15.07.2020
+When you migrate to a new computer, after installing npm and node and cloning your repository, the app still shouldn't work properly. Why? Because there are a lot of dependencies, which are not installed. For that, go to the folder where are all the files of your project, namely the package.json. There are declared all the dependencies. Just go to the terminal and "npm install" should help ;)
+
 08.07.2020
 to do:
 - write the 'case' to json (apparently not possible on github pages - need to go somewhere else to use node)
